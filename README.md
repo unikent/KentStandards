@@ -24,12 +24,12 @@ interpreted as described in [RFC 2119].
 
 ### 1.1. PHP Tags
 
-PHP code MUST use the long `<?php ?>` tags it MUST NOT use the 
+- PHP code MUST use the long `<?php ?>` tags it MUST NOT use the 
 short-echo `<?= ?>` tags or other tag variations.
 
 ### 1.2. Character Encoding
 
-PHP code MUST use only UTF-8 without BOM.
+- PHP code MUST use only UTF-8 without BOM.
 
 ### 1.3. Line Endings
 
