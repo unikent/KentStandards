@@ -1,8 +1,9 @@
-Kent Standards
-==============
+# Kent Standards
 
-##University of Kent Coding Standards and Style Guide
+## Usage
+This style guide is derived from [PSR-2](http://www.php-fig.org/psr/psr-2/) but has been modified slightly for the University of Kent development teams. This product is publicly available under the terms of the MIT license included in this repository. Please refer to the current [brand guidelines](https://www.kent.ac.uk/brand) for use of the existing brand.
 
+## University of Kent Coding Standards and Style Guide
 This document comprises what should be considered the standard
 coding elements that are required to ensure a high level of technical
 interoperability between shared PHP code.
@@ -13,7 +14,7 @@ The style rules herein are derived from commonalities among the various member p
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
-interpreted as described in [RFC 2119].
+interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt).
 
 [RFC 2119]: http://www.ietf.org/rfc/rfc2119.txt
 [PSR-0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
