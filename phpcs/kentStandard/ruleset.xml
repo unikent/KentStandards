@@ -5,11 +5,11 @@ codesniffer ruleset by Christian Cable c.f.cable@kent.ac.uk
 corrections to help it match the standard are more than welcome
 -->
 
- <description>PHP Coding Standard for The University of Kent</description>
+<description>PHP Coding Standard for The University of Kent</description>
 
 <!-- PSR2 -->
 <rule ref="PSR2">
-<exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
+    <exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
 </rule>
 
 <!-- 1.1. PHP Tags
@@ -28,7 +28,6 @@ PHP code MUST use only UTF-8 without BOM.
 
 <!-- 1.3. Line Endings
 All PHP files SHOULD use use the Unix LF (linefeed) line ending. Whatever line ending is used it MUST be used consitently throughout a project.
-
 SAME AS PSR2
 -->
 
