@@ -1,9 +1,11 @@
 <?xml version="1.0"?>
-<ruleset name="Kent Standard">
+<ruleset name="KentStandard">
 <!-- phpcs rule set based on https://github.com/unikent/KentStandards 
 codesniffer ruleset by Christian Cable c.f.cable@kent.ac.uk
 corrections to help it match the standard are more than welcome
 -->
+
+ <description>PHP Coding Standard for The University of Kent</description>
 
 <!-- PSR2 -->
 <rule ref="PSR2">
@@ -12,8 +14,12 @@ corrections to help it match the standard are more than welcome
 
 <!-- 1.1. PHP Tags
 PHP code MUST use the long <?php ?> tags it MUST NOT use the short-echo <?= ?> tags or other tag variations. 
-@TODO - need custom config
+
+NOTE - if the local php doesn't have short tags enabled then this rules isn't even run because code surrounded by short tags
+isn't even considered php...
 -->
+<rule ref="Generic.PHP.DisallowShortOpenTag"/>
+
 
 <!-- 1.2. Character Encoding
 PHP code MUST use only UTF-8 without BOM.
@@ -46,11 +52,12 @@ SAME AS PSR2
 
 Code MUST use tabs for indentation, and MUST NOT use spaces for indenting.
 The use of spaces is permitted for fine-grained inter-line alignment of operators, values etc.
-@TODO - Kent Rule - need custom config??
-
 -->
-<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
-</ruleset>
+<rule ref="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed">
+  <message>Code MUST use tabs for indentation, and MUST NOT use spaces for indenting. The use of spaces is permitted for fine-grained inter-line alignment of operators, values etc.</message>
+</rule>
+
+
 
 
 
@@ -89,7 +96,7 @@ SAME AS PSR2 (defined in PSR1)
 <!--  2 Namespace, Use Declarations and Class Names
 Namespaces and classes MUST follow PSR-4 "autoloading". This means each class is in a file by itself, 
 and is in a namespace of at least one level: a top-level vendor name.
-@TODO - Kent Rule - need custom config??
+SAME AS PSR2
 
 
 When present, there MUST be one blank line after the namespace declaration.
@@ -116,7 +123,7 @@ SAME AS PSR2 (defined in PSR1)
 
 
 Code written for 5.2.x and before SHOULD use the pseudo-namespacing convention of Vendor_ prefixes on class names.
-@TODO - Kent Rule - need custom config??
+SAME AS PSR2 (defined in PSR1)
 
 The extends and implements keywords MUST be declared on the same line as the class name.
 SAME AS PSR2
@@ -447,3 +454,4 @@ $foo->bar(
 );
 SAME AS PSR2
 -->
+</ruleset>
