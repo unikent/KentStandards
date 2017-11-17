@@ -363,7 +363,7 @@ SAME AS PSR2
 
 <!-- 5.7. Ternary statements
 
-Ternary statments MUST NOT be nested. Use other approriate control structues nested with correct indentation.
+Ternary statements MUST NOT be nested. Use other approriate control structues nested with correct indentation.
 
 There MUST be one space both before and after the ? and : in a ternary expresion. ?: is permited when ther is no `true' case.
 
