@@ -20,6 +20,28 @@ interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt).
 [PSR-0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
 [PSR-4]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md
 
+## PHP Code Sniffer
+
+A [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer) ruleset along with custom _sniffs_ is in the `phpcs\kentStandard` folder. This ruleset implements most, but not all, of the rules outlined below. To use this you must install [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer) and make phpcs and phpcbf avaliable on your path.
+
+This ruleset can be used on the command line and by editors such as [VS Code](https://code.visualstudio.com/) to automatically flag or fix errors.
+
+In the commands below assume that the kentStandards repo is checked out at `~/Code/kentStandards`
+
+Examples:  
+
+1. To list errors in a specific file
+
+```
+phpcs --standard=~/Code/KentStandards/phpcs/kentStandard/ruleset.xml file.php
+```
+
+2. To fix errors in a specific file when possible
+
+```
+phpcbf --standard=~/Code/KentStandards/phpcs/kentStandard/ruleset.xml file.php
+```
+
 ## 1. General
 
 ### 1.1. PHP Tags
