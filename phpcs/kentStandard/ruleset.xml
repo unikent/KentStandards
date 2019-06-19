@@ -342,7 +342,7 @@ SAME AS PSR2
 
 
 Avoid the use of $k, $v, $key, $value etc. for variables within a foreach, names SHOULD be descriptive.
-@TODO - Kent Rule - need custom config??
+CUSTOM RULE - DisallowGenericVariableNamesInForEachLoopSniff
 -->
 
 
