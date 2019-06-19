@@ -20,8 +20,7 @@ interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt).
 [PSR-0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
 [PSR-4]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md
 
-1. General
---------
+## 1. General
 
 ### 1.1. PHP Tags
 
@@ -124,8 +123,7 @@ if (! function_exists('bar')) {
 ```
 
 
-2. Namespace, Use Declarations and Class Names
-----------------------------
+## 2. Namespace, Use Declarations and Class Names
 
 - Namespaces and classes MUST follow [PSR-4] "autoloading".
   This means each class is in a file by itself, and is in a namespace of at
@@ -222,8 +220,7 @@ class ClassName extends ParentClass implements
 }
 ```
 
-3. Class Constants, Properties, and Methods
--------------------------------------------
+## 3. Class Constants, Properties, and Methods
 
 The term "class" refers to all classes, interfaces, and traits.
 
@@ -363,8 +360,7 @@ abstract class ClassName
     }
 }
 ```
-4. Method and Function Calls
-----------------------------
+## 4. Method and Function Calls
 
 - When making a method or function call, there MUST NOT be a space between the
   method or function name and the opening parenthesis, there MUST NOT be a space
@@ -391,8 +387,7 @@ $foo->bar(
     $muchLongerArgument
 );
 ```
-5. Control Structures
----------------------
+## 5. Control Structures
 
 The general style rules for control structures are as follows:
 
@@ -543,8 +538,7 @@ try {
 - There MUST be braces surrounding the condition if it contains any form of expression,
   i.e. is not simply a variable or boolean.
 
-6. Closures
------------
+## 6. Closures
 
 - Closures MUST be declared with a space after the `function` keyword, and a
   space before and after the `use` keyword.
